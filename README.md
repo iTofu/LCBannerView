@@ -1,6 +1,6 @@
 # LCBannerView
 
-🔥A very popular and highly customized banner view! 
+🔥A very popular and highly customized banner view! And, infinite loop!
 
 ![LCBannerView](https://github.com/LeoiOS/LCBannerView/blob/master/LCBannerViewDemo.gif)
 ````
