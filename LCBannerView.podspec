@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LCBannerView"
   s.version      = "1.0.0"
-  s.summary      = "A simple progress HUD. Support: http://www.leodong.com"
+  s.summary      = "A very popular and highly customized banner view! . Support: http://www.leodong.com"
   s.homepage     = "https://github.com/LeoiOS/LCBannerView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Leo" => "leoios@sina.com" }
