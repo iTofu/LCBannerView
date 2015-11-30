@@ -2,6 +2,7 @@
 
 🔥A very popular and highly customized banner view! 
 
+![LCBannerView](https://github.com/LeoiOS/LCBannerView/blob/master/LCBannerViewDemo.gif)
 ````
 心有猛虎，细嗅蔷薇。
 ````
@@ -12,7 +13,7 @@
 
 This is a display of advertising or information.
 
-⭐️ If you feel good, please give me a star, thank you!
+If you feel good, please give me a star, thank you! ⭐️
 
 You can using the images from **local** or **internet**.
 
