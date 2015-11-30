@@ -72,8 +72,8 @@ Just drag the LCBannerView folder into your project.
 // logs
 2015-11-30 17:36:20.611 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 1
 2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 1
-2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 1
-2015-11-30 17:36:22.380 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 1
+2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 2
+2015-11-30 17:36:22.380 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 3
 ````
 
 
