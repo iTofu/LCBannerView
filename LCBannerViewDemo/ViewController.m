@@ -53,13 +53,13 @@
     
     [scrollView addSubview:({
     
-        LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 300.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
-                                                              delegate:self
-                                                             imageURLs:URLs
-                                                      placeholderImage:nil
-                                                         timerInterval:2.0f
-                                         currentPageIndicatorTintColor:[UIColor redColor]
-                                                pageIndicatorTintColor:[UIColor whiteColor]];
+        LCBannerView *bannerView = [LCBannerView bannerViewWithFrame:CGRectMake(0, 300.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
+                                                            delegate:self
+                                                           imageURLs:URLs
+                                                    placeholderImage:nil
+                                                       timerInterval:2.0f
+                                       currentPageIndicatorTintColor:[UIColor redColor]
+                                              pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView;
     })];
     

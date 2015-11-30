@@ -32,6 +32,28 @@ static CGFloat LCPageDistance = 10.0f;      // pageControl 到底部的距离
 
 @implementation LCBannerView
 
++ (instancetype)bannerViewWithFrame:(CGRect)frame delegate:(id<LCBannerViewDelegate>)delegate imageName:(NSString *)imageName count:(NSInteger)count timerInterval:(NSInteger)timeInterval currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor {
+    
+    return [[self alloc] initWithFrame:frame
+                              delegate:delegate
+                             imageName:imageName
+                                 count:count
+                         timerInterval:timeInterval
+         currentPageIndicatorTintColor:currentPageIndicatorTintColor
+                pageIndicatorTintColor:pageIndicatorTintColor];
+}
+
++ (instancetype)bannerViewWithFrame:(CGRect)frame delegate:(id<LCBannerViewDelegate>)delegate imageURLs:(NSArray *)imageURLs placeholderImage:(NSString *)placeholderImage timerInterval:(NSInteger)timeInterval currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor {
+    
+    return [[self alloc] initWithFrame:frame
+                              delegate:delegate
+                             imageURLs:imageURLs
+                      placeholderImage:placeholderImage
+                         timerInterval:timeInterval
+         currentPageIndicatorTintColor:currentPageIndicatorTintColor
+                pageIndicatorTintColor:pageIndicatorTintColor];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame delegate:(id<LCBannerViewDelegate>)delegate imageName:(NSString *)imageName count:(NSInteger)count timerInterval:(NSInteger)timeInterval currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor {
     
     if (self = [super initWithFrame:frame]) {
