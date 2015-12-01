@@ -17,9 +17,9 @@ In me the tiger sniffs the rose.
 
 This is a display of advertising or information.
 
-If you feel good, please give me a star, thank you! ⭐️
-
 You can using the images from **local** or **internet**.
+
+If you feel good, please give me a star, thank you! ⭐️
 
 
 
@@ -42,7 +42,7 @@ Just drag the LCBannerView folder into your project.
 
 * Use by including the following import:
 ````objc
-#import "LCBannerView"
+#import "LCBannerView.h"
 ````
 * Demo code:
 ````objc
