@@ -1,14 +1,16 @@
 # LCBannerView
 
-[**中文介绍**](https://github.com/LeoiOS/LCBannerView/blob/master/README-zh_CN.md)
-
 🔥A very popular and highly customized banner view! And, infinite loop!
 
 ![LCBannerView](https://github.com/LeoiOS/LCBannerView/blob/master/LCBannerViewDemo.gif)
 ````
+In me the tiger sniffs the rose.
+
 心有猛虎，细嗅蔷薇。
 ````
 
+
+[**中文介绍**](https://github.com/LeoiOS/LCBannerView/blob/master/README-zh_CN.md)
 
 
 ## Introduction
