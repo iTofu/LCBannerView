@@ -9,8 +9,8 @@ In me the tiger sniffs the rose.
 心有猛虎，细嗅蔷薇。
 ````
 
-
 [**中文介绍**](https://github.com/LeoiOS/LCBannerView/blob/master/README-zh_CN.md)
+
 
 
 ## Introduction
@@ -19,7 +19,9 @@ This is a display of advertising or information.
 
 You can using the images from **local** or **internet**.
 
-If you feel good, please give me a star, thank you! ⭐️
+And it won't affect other scrollViews' `scrollsToTop` propertie.
+
+If you feel good, please give me a star, thank you very much! ⭐️
 
 
 
