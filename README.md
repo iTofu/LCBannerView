@@ -60,7 +60,22 @@ Just drag the LCBannerView folder into your project.
 })];
 
 // 2. from local
-// please find out the code from the demo
+/*  
+ *  If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`...
+ *  Than, you just give me a image named: `banner`. 😜
+ */
+[scrollView addSubview:({
+    
+    LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
+                                                          delegate:self
+                                                         imageName:@"banner"
+                                                             count:3
+                                                     timerInterval:3.0f
+                                     currentPageIndicatorTintColor:[UIColor orangeColor]
+                                            pageIndicatorTintColor:[UIColor whiteColor]];
+    bannerView;
+})];
+
 ````
 
 * Delegate (`@optional`):
@@ -78,7 +93,11 @@ Just drag the LCBannerView folder into your project.
 2015-11-30 17:36:20.611 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 1
 2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 1
 2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 2
-2015-11-30 17:36:22.380 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 3
+````
+* Custom parameters (in `LCBannerView.m`):
+````objc
+// pageControl to the bottom of the distance
+static CGFloat LCPageDistance = 10.0f;
 ````
 
 
