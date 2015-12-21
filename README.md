@@ -111,8 +111,8 @@ static CGFloat LCPageDistance = 10.0f;
 
 ## Support
 * If you have any questions, please commit a issure! Thx!
-* Email: leoios@sina.com
-* Blog: http://www.leodong.com
+* Email: leoios@sina.com & liucsuper@gmail.com
+* Blog: http://LeoDev.me & http://www.leodong.com
 
 
 
