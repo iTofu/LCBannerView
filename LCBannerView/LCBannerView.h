@@ -5,14 +5,14 @@
 //  Created by Leo on 15/11/30.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.0.0
+//  GitHub: http://github.com/LeoiOS
+//  Mail:   mailto:devtip@163.com
+//  V 1.1.0
 
 #import <UIKit/UIKit.h>
 
 
-
 @class LCBannerView;
-
 
 
 @protocol LCBannerViewDelegate <NSObject>
@@ -26,6 +26,15 @@
 
 
 @interface LCBannerView : UIView
+
+
+#pragma mark - Property
+
+/**
+ *  Page control view bottom distance. Default is `10.0f`.
+ */
+@property (nonatomic, assign) CGFloat pageDistance;
+
 
 #pragma mark - Class methods
 
@@ -70,7 +79,6 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
                       timerInterval:(NSInteger)timeInterval
       currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
              pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
-
 
 
 #pragma mark - Instance methods

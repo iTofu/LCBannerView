@@ -34,6 +34,7 @@
                                                          timerInterval:3.0f
                                          currentPageIndicatorTintColor:[UIColor orangeColor]
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
+        bannerView.pageDistance = 20.0f;
         bannerView;
     })];
     

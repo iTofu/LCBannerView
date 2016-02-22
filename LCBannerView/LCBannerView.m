@@ -5,7 +5,7 @@
 //  Created by Leo on 15/11/30.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.0.0
+//
 
 #import "LCBannerView.h"
 #import "UIImageView+WebCache.h"
@@ -14,19 +14,19 @@ static CGFloat LCPageDistance = 10.0f;      // pageControl 到底部的距离
 
 @interface LCBannerView () <UIScrollViewDelegate>
 
-@property (nonatomic, weak) id<LCBannerViewDelegate> delegate;
+@property (nonatomic, weak  ) id<LCBannerViewDelegate> delegate;
 
-@property (nonatomic, copy) NSString *imageName;
-@property (nonatomic, strong) NSArray *imageURLs;
-@property (nonatomic, assign) NSInteger count;
-@property (nonatomic, assign) CGFloat timerInterval;
-@property (nonatomic, strong) UIColor *currentPageIndicatorTintColor;
-@property (nonatomic, strong) UIColor *pageIndicatorTintColor;
-@property (nonatomic, copy) NSString *placeholderImage;
+@property (nonatomic, copy  ) NSString             *imageName;
+@property (nonatomic, strong) NSArray              *imageURLs;
+@property (nonatomic, assign) NSInteger            count;
+@property (nonatomic, assign) CGFloat              timerInterval;
+@property (nonatomic, strong) UIColor              *currentPageIndicatorTintColor;
+@property (nonatomic, strong) UIColor              *pageIndicatorTintColor;
+@property (nonatomic, copy  ) NSString             *placeholderImage;
 
-@property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, weak) UIScrollView *scrollView;
-@property (nonatomic, weak) UIPageControl *pageControl;
+@property (nonatomic, strong) NSTimer              *timer;
+@property (nonatomic, weak  ) UIScrollView         *scrollView;
+@property (nonatomic, weak  ) UIPageControl        *pageControl;
 
 @end
 
@@ -180,6 +180,16 @@ static CGFloat LCPageDistance = 10.0f;      // pageControl 到底部的距离
     if ([self.delegate respondsToSelector:@selector(bannerView:didClickedImageIndex:)]) {
         
         [self.delegate bannerView:self didClickedImageIndex:tap.view.tag - 1];
+    }
+}
+
+- (void)setPageDistance:(CGFloat)pageDistance {
+    _pageDistance = pageDistance;
+    
+    if (pageDistance != LCPageDistance) {
+        CGRect frame = self.pageControl.frame;
+        frame.origin.y = self.frame.size.height - 10.0f - pageDistance;
+        self.pageControl.frame = frame;
     }
 }
 
