@@ -109,6 +109,21 @@ Just drag the LCBannerView folder into your project.
 
 ## Release
 
+### V 1.2.0
+* You could custom should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
+  ````objc
+  LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
+                                                        delegate:self
+                                                       imageName:@"banner"
+                                                           count:3
+                                                   timerInterval:3.0f
+                                   currentPageIndicatorTintColor:[UIColor orangeColor]
+                                          pageIndicatorTintColor:[UIColor whiteColor]];
+  bannerView.pageDistance = 20.0f;
+  bannerView.notScrolling = YES; // THIS LINE ⬅️
+  bannerView;
+  ````
+
 ### V 1.1.0
 * You could custom page control bottom distance now. For example:
   ````objc
