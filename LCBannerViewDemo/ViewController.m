@@ -35,7 +35,7 @@
                                          currentPageIndicatorTintColor:[UIColor orangeColor]
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView.pageDistance = 20.0f;
-        bannerView.notScrolling = YES;
+//        bannerView.notScrolling = YES;
         bannerView;
     })];
     
