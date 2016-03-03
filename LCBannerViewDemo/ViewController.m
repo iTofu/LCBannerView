@@ -35,6 +35,7 @@
                                          currentPageIndicatorTintColor:[UIColor orangeColor]
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView.pageDistance = 20.0f;
+        bannerView.notScrolling = YES;
         bannerView;
     })];
     
@@ -75,7 +76,7 @@
 
 - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
     
-    NSLog(@"you clicked image in %@ at index: %ld", bannerView, (long)index);
+    NSLog(@"you clicked image in %p at index: %ld", bannerView, (long)index);
 }
 
 @end

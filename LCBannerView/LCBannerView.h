@@ -7,7 +7,7 @@
 //
 //  GitHub: http://github.com/LeoiOS
 //  Mail:   mailto:devtip@163.com
-//  V 1.1.0
+//  V 1.2.0
 
 #import <UIKit/UIKit.h>
 
@@ -34,6 +34,11 @@
  *  Page control view bottom distance. Default is `10.0f`.
  */
 @property (nonatomic, assign) CGFloat pageDistance;
+
+/**
+ *  Do not allow scrolling. Default allow scrolling.
+ */
+@property (nonatomic, assign) BOOL notScrolling;
 
 
 #pragma mark - Class methods

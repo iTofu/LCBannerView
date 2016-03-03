@@ -193,6 +193,19 @@ static CGFloat LCPageDistance = 10.0f;      // pageControl 到底部的距离
     }
 }
 
+- (void)setNotScrolling:(BOOL)notScrolling {
+    _notScrolling = notScrolling;
+    
+    if (notScrolling) {
+        self.pageControl.hidden = YES;
+        self.scrollView.scrollEnabled = NO;
+        
+        if (self.timer) {
+            [self removeTimer];
+        }
+    }
+}
+
 #pragma mark - Timer
 
 - (void)addTimer {
