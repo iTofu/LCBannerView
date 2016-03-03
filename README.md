@@ -99,7 +99,9 @@ Just drag the LCBannerView folder into your project.
   2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b433190; frame = (0 20; 375 200); layer = <CALayer: 0x7fc98b42ce20>> at index: 1
   2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in <LCBannerView: 0x7fc98b751ff0; frame = (0 300; 375 200); layer = <CALayer: 0x7fc98b7521b0>> at index: 2
   ````
+  
 * Custom parameters (in `LCBannerView.m`):
+
   ````objc
   // pageControl to the bottom of the distance
   static CGFloat LCPageDistance = 10.0f;
@@ -111,6 +113,7 @@ Just drag the LCBannerView folder into your project.
 
 ### V 1.2.0
 * You could custom should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
+
   ````objc
   LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
                                                         delegate:self
@@ -126,6 +129,7 @@ Just drag the LCBannerView folder into your project.
 
 ### V 1.1.0
 * You could custom page control bottom distance now. For example:
+
   ````objc
   // ...
   bannerView.pageDistance = 20.0f;
