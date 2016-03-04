@@ -8,5 +8,10 @@
 ````
 
 ````
-待续。
+同胞们都很聪明，害要啥 README！
 ````
+
+* Email: mailto:devtip@163.com
+* Blog: http://LeoDev.me
+
+[MIT License](http://opensource.org/licenses/MIT)

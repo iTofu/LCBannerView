@@ -112,7 +112,7 @@ Just drag the LCBannerView folder into your project.
 ## Release
 
 ### V 1.2.0
-* You could custom should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
+* You could custom the images should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
 
   ````objc
   LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
