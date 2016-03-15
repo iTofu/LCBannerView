@@ -1,6 +1,12 @@
 # LCBannerView
 
-🔥A very popular and highly customized banner view! Infinite loop!
+[![Travis](https://img.shields.io/travis/LeoiOS/LCBannerView.svg?style=flat)](https://travis-ci.org/LeoiOS/LCBannerView)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LCBannerView.svg)](http://cocoadocs.org/docsets/LCBannerView)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCBannerView.svg)](https://raw.githubusercontent.com/LeoiOS/LCBannerView/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/p/LCBannerView.svg)](http://cocoadocs.org/docsets/LCBannerView)
+[![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
+
+🔥 A very popular and highly customized banner view! Infinite loop!
 
 ![LCBannerView](https://github.com/LeoiOS/LCBannerView/blob/master/LCBannerViewDemo.gif)
 ````
