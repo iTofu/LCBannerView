@@ -8,7 +8,8 @@
 
 🔥 A very popular and highly customized banner view! Infinite loop!
 
-![LCBannerView](https://github.com/LeoiOS/LCBannerView/blob/master/LCBannerViewDemo.gif)
+![LCBannerView](https://raw.githubusercontent.com/LeoiOS/LCBannerView/master/LCBannerViewDemo.gif)
+
 ````
 In me the tiger sniffs the rose.
 
@@ -36,6 +37,7 @@ If you feel good, please give me a star, thank you very much! ⭐️
 ## Installation
 
 LCBannerView is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
+
 ````ruby
 pod "LCBannerView"  # Podfile
 ````
@@ -51,10 +53,13 @@ Just drag the LCBannerView folder into your project.
 ## Usage
 
 * Use by including the following import:
+
   ````objc
   #import "LCBannerView.h"
   ````
+  
 * Demo code:
+
   ````objc
   // 1. from internet
   [scrollView addSubview:({
@@ -86,14 +91,16 @@ Just drag the LCBannerView folder into your project.
                                               pageIndicatorTintColor:[UIColor whiteColor]];
       bannerView;
   })];
-
   ````
 
-* Delegate (`@optional`):
+* Delegate:（`@optional`）
+
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
   ````
-  * For example:
+  
+  For example:
+  
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
 
@@ -106,7 +113,7 @@ Just drag the LCBannerView folder into your project.
   2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in 0x7fc98b751ff0 at index: 2
   ````
 
-* Custom parameters (in `LCBannerView.m`):
+* Custom parameters:（in `LCBannerView.m`）
 
   ````objc
   // pageControl to the bottom of the distance
@@ -118,6 +125,7 @@ Just drag the LCBannerView folder into your project.
 ## Release
 
 ### V 1.2.0
+
 * You could custom the images should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
 
   ````objc
@@ -134,6 +142,7 @@ Just drag the LCBannerView folder into your project.
   ````
 
 ### V 1.1.0
+
 * You could custom page control bottom distance now. For example:
 
   ````objc
@@ -142,21 +151,25 @@ Just drag the LCBannerView folder into your project.
   ````
 
 ### V 1.0.0
+
 * Initial commit.
 
 
 
 ## Thanks
+
 * [SDWebImage](https://github.com/rs/SDWebImage)
 
 
 
 ## Support
-* If you have any questions, please commit a issure! Thx!
-* Email: devtip@163.com
+
+* If you have any questions, please [commit a issure](https://github.com/LeoiOS/LCBannerView/issues/new)! Thx!
+* Mail: devtip@163.com
 * Blog: http://LeoDev.me
 
 
 
 ### License
+
 [MIT License](http://opensource.org/licenses/MIT)
