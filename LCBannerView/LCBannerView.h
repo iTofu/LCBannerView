@@ -5,9 +5,9 @@
 //  Created by Leo on 15/11/30.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  GitHub: http://github.com/LeoiOS
+//  GitHub: http://github.com/iTofu
 //  Mail:   mailto:devtip@163.com
-//  V 1.2.0
+//  V 1.2.3
 
 #import <UIKit/UIKit.h>
 
@@ -36,7 +36,7 @@
 @property (nonatomic, assign) CGFloat pageDistance;
 
 /**
- *  Do not allow scrolling. Default allow scrolling.
+ *  Not allow scrolling. Default `No`, allow scrolling.
  */
 @property (nonatomic, assign) BOOL notScrolling;
 

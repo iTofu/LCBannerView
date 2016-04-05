@@ -1,14 +1,14 @@
 # LCBannerView
 
-[![Travis](https://img.shields.io/travis/LeoiOS/LCBannerView.svg?style=flat)](https://travis-ci.org/LeoiOS/LCBannerView)
+[![Travis](https://img.shields.io/travis/iTofu/LCBannerView.svg?style=flat)](https://travis-ci.org/iTofu/LCBannerView)
 [![CocoaPods](https://img.shields.io/cocoapods/v/LCBannerView.svg)](http://cocoadocs.org/docsets/LCBannerView)
-[![CocoaPods](https://img.shields.io/cocoapods/l/LCBannerView.svg)](https://raw.githubusercontent.com/LeoiOS/LCBannerView/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCBannerView.svg)](https://raw.githubusercontent.com/iTofu/LCBannerView/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/p/LCBannerView.svg)](http://cocoadocs.org/docsets/LCBannerView)
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
 
 🔥 A very popular and highly customized banner view! Infinite loop!
 
-![LCBannerView](https://raw.githubusercontent.com/LeoiOS/LCBannerView/master/LCBannerViewDemo.gif)
+![LCBannerView](https://raw.githubusercontent.com/iTofu/LCBannerView/master/LCBannerViewDemo.gif)
 
 ````
 In me the tiger sniffs the rose.
@@ -18,7 +18,7 @@ In me the tiger sniffs the rose.
 
 Welcome to visit my blog: <http://LeoDev.me> ✨
 
-[**中文介绍**](https://github.com/LeoiOS/LCBannerView/blob/master/README-zh_CN.md)
+[**中文介绍**](https://github.com/iTofu/LCBannerView/blob/master/README-zh_CN.md)
 
 
 
@@ -57,7 +57,7 @@ Just drag the LCBannerView folder into your project.
   ````objc
   #import "LCBannerView.h"
   ````
-  
+
 * Demo code:
 
   ````objc
@@ -98,9 +98,9 @@ Just drag the LCBannerView folder into your project.
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
   ````
-  
+
   For example:
-  
+
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
 
@@ -123,6 +123,11 @@ Just drag the LCBannerView folder into your project.
 
 
 ## Release
+
+### V 1.2.2
+
+* Update CocoaPods source URL.
+
 
 ### V 1.2.0
 
@@ -150,6 +155,7 @@ Just drag the LCBannerView folder into your project.
   bannerView.pageDistance = 20.0f;
   ````
 
+
 ### V 1.0.0
 
 * Initial commit.
@@ -164,7 +170,7 @@ Just drag the LCBannerView folder into your project.
 
 ## Support
 
-* If you have any questions, please [commit a issure](https://github.com/LeoiOS/LCBannerView/issues/new)! Thx!
+* If you have any questions, please [commit a issure](https://github.com/LeoGod/LCBannerView/issues/new)! Thx!
 * Mail: devtip@163.com
 * Blog: http://LeoDev.me
 
