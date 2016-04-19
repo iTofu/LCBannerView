@@ -170,7 +170,7 @@ Just drag the LCBannerView folder into your project.
 
 ## Support
 
-* If you have any questions, please [commit a issure](https://github.com/LeoGod/LCBannerView/issues/new)! Thx!
+* If you have any questions, please [commit a issue](https://github.com/LeoGod/LCBannerView/issues/new)! Thx!
 * Mail: devtip@163.com
 * Blog: http://LeoDev.me
 
