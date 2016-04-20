@@ -178,6 +178,6 @@ Just drag the LCBannerView folder into your project.
 
 
 
-### License
+## License
 
 [MIT License](http://opensource.org/licenses/MIT)
