@@ -1,13 +1,12 @@
 //
 //  LCBannerView.h
-//  LCBannerViewDemo
 //
 //  Created by Leo on 15/11/30.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
 //  GitHub: http://github.com/iTofu
 //  Mail:   mailto:devtip@163.com
-//  V 1.2.3
+//  V 1.2.5
 
 #import <UIKit/UIKit.h>
 
@@ -19,6 +18,12 @@
 
 @optional
 
+/**
+ *  LCBannerView delegate method.
+ *
+ *  @param bannerView LCBannerView
+ *  @param index      clicked index
+ */
 - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
 
 @end
@@ -28,10 +33,10 @@
 @interface LCBannerView : UIView
 
 
-#pragma mark - Property
+#pragma mark - Properties
 
 /**
- *  Page control view bottom distance. Default is `10.0f`.
+ *  Page control to bottom distance. Default is `10.0f`.
  */
 @property (nonatomic, assign) CGFloat pageDistance;
 
@@ -44,7 +49,7 @@
 #pragma mark - Class methods
 
 /**
- *  init a LCBannerView object from local
+ *  Init a LCBannerView object from local.
  *
  *  @param frame                         frame
  *  @param delegate                      delegate
@@ -65,7 +70,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
        pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
 /**
- *  init a LCBannerView object from internet
+ *  Init a LCBannerView object from internet.
  *
  *  @param frame                         frame
  *  @param delegate                      delegate
@@ -89,7 +94,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
 #pragma mark - Instance methods
 
 /**
- *  init a LCBannerView object from local
+ *  Init a LCBannerView object from local.
  *
  *  @param frame                         frame
  *  @param delegate                      delegate
@@ -110,7 +115,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
        pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
 /**
- *  init a LCBannerView object from internet
+ *  Init a LCBannerView object from internet.
  *
  *  @param frame                         frame
  *  @param delegate                      delegate

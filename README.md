@@ -16,7 +16,7 @@ In me the tiger sniffs the rose.
 心有猛虎，细嗅蔷薇。
 ````
 
-Welcome to visit my blog: <http://LeoDev.me> ✨
+Welcome to my blog: <http://LeoDev.me> ✨
 
 [**中文介绍**](https://github.com/iTofu/LCBannerView/blob/master/README-zh_CN.md)
 
@@ -28,7 +28,7 @@ This is a display of advertising or information.
 
 You can using the images from **Local** or **Internet**.
 
-And it won't affect other scrollViews' `scrollsToTop` propertie.
+And it won't affect other scrollViews' `scrollsToTop` properties.
 
 If you feel good, please give me a star, thank you very much! ⭐️
 
@@ -123,6 +123,11 @@ Just drag the LCBannerView folder into your project.
 
 
 ## Release
+
+### V 1.2.5
+
+* Update README and some documents.
+
 
 ### V 1.2.2
 
