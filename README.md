@@ -175,7 +175,7 @@ Just drag the LCBannerView folder into your project.
 
 ## Support
 
-* If you have any question, just [commit a issue](https://github.com/LeoGod/LCBannerView/issues/new)! Thx!
+* If you have any question, just [commit a issue](https://github.com/iTofu/LCBannerView/issues/new)! Thx!
 
 * Mail: devtip@163.com
 
