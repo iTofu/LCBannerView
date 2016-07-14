@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files = "LCBannerView/*"
   s.requires_arc = true
 
-  s.dependency "SDWebImage", '~>3.8'
+  s.dependency "SDWebImage", '~> 3.7.6'
 
 end
