@@ -209,6 +209,10 @@ Just drag the LCBannerView folder into your project.
 
 * Blog: http://LeoDev.me
 
+* Friendly sponsorship:
+
+  ![Leo](http://note.leodev.me/alipay.png)
+
 
 
 ## License
