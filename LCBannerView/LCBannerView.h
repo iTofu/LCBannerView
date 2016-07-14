@@ -36,7 +36,7 @@
 #pragma mark - Properties
 
 /**
- *  Page control to bottom distance. Default is `10.0f`.
+ *  Distance to bottom of pageControl. Default is `10.0f`.
  */
 @property (nonatomic, assign) CGFloat   pageDistance;
 

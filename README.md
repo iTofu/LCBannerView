@@ -68,7 +68,7 @@ Just drag the LCBannerView folder into your project.
                                                           delegate:self
                                                          imageURLs:URLs
                                                   placeholderImage:nil
-                                                     timerInterval:2.0f
+                                                      timeInterval:2.0f
                                      currentPageIndicatorTintColor:[UIColor redColor]
                                             pageIndicatorTintColor:[UIColor whiteColor]];
       bannerView.pageDistance = 20.0f;
@@ -86,7 +86,7 @@ Just drag the LCBannerView folder into your project.
                                                             delegate:self
                                                            imageName:@"banner"
                                                                count:3
-                                                       timerInterval:3.0f
+                                                        timeInterval:3.0f
                                        currentPageIndicatorTintColor:[UIColor orangeColor]
                                               pageIndicatorTintColor:[UIColor whiteColor]];
       bannerView;
@@ -104,20 +104,27 @@ Just drag the LCBannerView folder into your project.
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
 
-        NSLog(@"you clicked image in %@ at index: %ld", bannerView, (long)index);
+        NSLog(@"You clicked image in %@ at index: %ld", bannerView, (long)index);
   }
 
-  // logs
-  2015-11-30 17:36:20.611 LCBannerViewDemo[6075:456257] you clicked image in 0x7fc98b751ff0 at index: 1
-  2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] you clicked image in 0x7fc98b433190 at index: 1
-  2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] you clicked image in 0x7fc98b751ff0 at index: 2
+  // Logs
+  2015-11-30 17:36:20.611 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b751ff0 at index: 1
+  2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b433190 at index: 1
+  2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b751ff0 at index: 2
   ````
 
-* Custom parameters:（in `LCBannerView.m`）
+* Custom parameters:
 
   ````objc
-  // pageControl to the bottom of the distance
-  static CGFloat LCPageDistance = 10.0f;
+  /**
+   *  Distance to bottom of pageControl. Default is `10.0f`.
+   */
+  @property (nonatomic, assign) CGFloat   pageDistance;
+
+  /**
+   *  Not allow scrolling. Default `No`, allow scrolling.
+   */
+  @property (nonatomic, assign) BOOL      notScrolling;
   ````
 
 
