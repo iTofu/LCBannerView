@@ -11,6 +11,9 @@
 
 @interface ViewController () <LCBannerViewDelegate>
 
+@property (nonatomic, weak) LCBannerView *bannerView1;
+@property (nonatomic, weak) LCBannerView *bannerView2;
+
 @end
 
 @implementation ViewController
@@ -30,13 +33,13 @@
         LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
                                                               delegate:self
                                                              imageName:@"banner"
-                                                                 count:3
-                                                         timerInterval:3.0f
+                                                                 count:2
+                                                          timeInterval:3.0f
                                          currentPageIndicatorTintColor:[UIColor orangeColor]
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView.pageDistance = 20.0f;
 //        bannerView.notScrolling = YES;
-        bannerView;
+        self.bannerView1 = bannerView;
     })];
     
     [scrollView addSubview:({
@@ -58,11 +61,11 @@
         LCBannerView *bannerView = [LCBannerView bannerViewWithFrame:CGRectMake(0, 300.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
                                                             delegate:self
                                                            imageURLs:URLs
-                                                    placeholderImage:nil
-                                                       timerInterval:2.0f
+                                                placeholderImageName:nil
+                                                        timeInterval:2.0f
                                        currentPageIndicatorTintColor:[UIColor redColor]
                                               pageIndicatorTintColor:[UIColor whiteColor]];
-        bannerView;
+        self.bannerView2 = bannerView;
     })];
     
     [scrollView addSubview:({
@@ -72,11 +75,30 @@
         tipLabel.text = @"⬆️ images from internet.";
         tipLabel;
     })];
+    
+    [self performSelector:@selector(changed) withObject:nil afterDelay:3.0f];
+}
+
+- (void)changed {
+    self.bannerView1.count = 3;
+    
+    NSArray *URLs = @[@"http://admin.guoluke.com:80/userfiles/files/admin/201509181708260671.png",
+                      @"http://admin.guoluke.com:80/userfiles/files/admin/201509181707000766.png"];
+    self.bannerView2.imageURLs = URLs;
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"⚠️ Images changed, local images count from 2 to 3, internet image count from 3 to 2, image 3 named `banner_03` and `<201509091054250274.jpg>`.";
+    label.textColor = [UIColor redColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont boldSystemFontOfSize:17.0f];
+    label.numberOfLines = 4;
+    label.frame = CGRectMake(10.0f, [UIScreen mainScreen].bounds.size.height - 50.0f, [UIScreen mainScreen].bounds.size.width - 10.0f * 2, 50.0f);
+    [self.view addSubview:label];
 }
 
 - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
     
-    NSLog(@"you clicked image in %p at index: %ld", bannerView, (long)index);
+    NSLog(@"You clicked image in %p at index: %ld", bannerView, (long)index);
 }
 
 @end

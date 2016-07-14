@@ -6,7 +6,7 @@
 //
 //  GitHub: http://github.com/iTofu
 //  Mail:   mailto:devtip@163.com
-//  V 1.2.5
+//  V 1.3.0
 
 #import <UIKit/UIKit.h>
 
@@ -38,12 +38,37 @@
 /**
  *  Page control to bottom distance. Default is `10.0f`.
  */
-@property (nonatomic, assign) CGFloat pageDistance;
+@property (nonatomic, assign) CGFloat   pageDistance;
 
 /**
  *  Not allow scrolling. Default `No`, allow scrolling.
  */
-@property (nonatomic, assign) BOOL notScrolling;
+@property (nonatomic, assign) BOOL      notScrolling;
+
+/**
+ *  Image name.
+ */
+@property (nonatomic, copy  ) NSString  *imageName;
+/**
+ *  Image URL array.
+ */
+@property (nonatomic, strong) NSArray   *imageURLs;
+/**
+ *  Count of images.
+ */
+@property (nonatomic, assign) NSInteger count;
+/**
+ *  Current page indicator tint color.
+ */
+@property (nonatomic, strong) UIColor   *currentPageIndicatorTintColor;
+/**
+ *  Other page indicator tint color.
+ */
+@property (nonatomic, strong) UIColor   *pageIndicatorTintColor;
+/**
+ *  Placeholder image name.
+ */
+@property (nonatomic, copy  ) NSString  *placeholderImageName;
 
 
 #pragma mark - Class methods
@@ -62,12 +87,12 @@
  *  @return a LCBannerView object
  */
 + (instancetype)bannerViewWithFrame:(CGRect)frame
-                     delegate:(id<LCBannerViewDelegate>)delegate
-                    imageName:(NSString *)imageName
-                        count:(NSInteger)count
-                timerInterval:(NSInteger)timeInterval
-currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
-       pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
+                           delegate:(id<LCBannerViewDelegate>)delegate
+                          imageName:(NSString *)imageName
+                              count:(NSInteger)count
+                       timeInterval:(NSInteger)timeInterval
+      currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
+             pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
 /**
  *  Init a LCBannerView object from internet.
@@ -75,7 +100,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
  *  @param frame                         frame
  *  @param delegate                      delegate
  *  @param imageURLs                     image's URLs
- *  @param placeholderImage              placeholder image
+ *  @param placeholderImageName          placeholder image
  *  @param timeInterval                  time interval
  *  @param currentPageIndicatorTintColor current page indicator tint color
  *  @param pageIndicatorTintColor        other page indicator tint color
@@ -85,8 +110,8 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
 + (instancetype)bannerViewWithFrame:(CGRect)frame
                            delegate:(id<LCBannerViewDelegate>)delegate
                           imageURLs:(NSArray *)imageURLs
-                   placeholderImage:(NSString *)placeholderImage
-                      timerInterval:(NSInteger)timeInterval
+               placeholderImageName:(NSString *)placeholderImageName
+                       timeInterval:(NSInteger)timeInterval
       currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
              pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
@@ -110,7 +135,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
                      delegate:(id<LCBannerViewDelegate>)delegate
                     imageName:(NSString *)imageName
                         count:(NSInteger)count
-                timerInterval:(NSInteger)timeInterval
+                 timeInterval:(NSInteger)timeInterval
 currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
        pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
@@ -120,7 +145,7 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
  *  @param frame                         frame
  *  @param delegate                      delegate
  *  @param imageURLs                     image's URLs
- *  @param placeholderImage              placeholder image
+ *  @param placeholderImageName          placeholder image
  *  @param timeInterval                  time interval
  *  @param currentPageIndicatorTintColor current page indicator tint color
  *  @param pageIndicatorTintColor        other page indicator tint color
@@ -130,8 +155,8 @@ currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
 - (instancetype)initWithFrame:(CGRect)frame
                      delegate:(id<LCBannerViewDelegate>)delegate
                     imageURLs:(NSArray *)imageURLs
-             placeholderImage:(NSString *)placeholderImage
-                timerInterval:(NSInteger)timeInterval
+         placeholderImageName:(NSString *)placeholderImageName
+                 timeInterval:(NSInteger)timeInterval
 currentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
        pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
 
