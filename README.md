@@ -61,7 +61,7 @@ Just drag the LCBannerView folder into your project.
 * Demo code:
 
   ````objc
-  // 1. from internet
+  // 1. From internet
   [scrollView addSubview:({
 
       LCBannerView *bannerView = [LCBannerView bannerViewWithFrame:CGRectMake(0, 300.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
@@ -75,7 +75,7 @@ Just drag the LCBannerView folder into your project.
       bannerView;
   })];
 
-  // 2. from local
+  // 2. From local
   /*  
    *  If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`...
    *  Than, you just give me a image named: `banner`. 😜
