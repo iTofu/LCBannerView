@@ -9,22 +9,19 @@
 #import "LCBannerView.h"
 #import "UIImageView+WebCache.h"
 
-static CGFloat LCPageDistance = 10.0f;      // pageControl 到底部的距离
+static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
 
 @interface LCBannerView () <UIScrollViewDelegate>
 
 @property (nonatomic, weak  ) id<LCBannerViewDelegate> delegate;
 
-/**
- *  Time interval.
- */
-@property (nonatomic, assign) CGFloat   timeInterval;
+@property (nonatomic, assign) CGFloat       timeInterval;
 
-@property (nonatomic, strong) NSTimer              *timer;
-@property (nonatomic, weak  ) UIScrollView         *scrollView;
-@property (nonatomic, weak  ) UIPageControl        *pageControl;
+@property (nonatomic, strong) NSTimer       *timer;
+@property (nonatomic, weak  ) UIScrollView  *scrollView;
+@property (nonatomic, weak  ) UIPageControl *pageControl;
 
-@property (nonatomic, assign) NSInteger oldURLCount;
+@property (nonatomic, assign) NSInteger     oldURLCount;
 
 @end
 

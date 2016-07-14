@@ -124,6 +124,22 @@ Just drag the LCBannerView folder into your project.
 
 ## Release
 
+### V 2.0.0 (⚠️ Important)
+
+* Fix [Issue 5](https://github.com/iTofu/LCBannerView/issues/5).
+
+* Modify some of the properties' name and methods' name:
+
+  ```
+  // Properties' name.
+  @property (nonatomic, assign) CGFloat timerInterval;
+  ->
+  @property (nonatomic, assign) CGFloat timeInterval;
+
+  // All methods' name.
+  timerInterval -> timeInterval
+  ```
+
 ### V 1.2.5
 
 * Update README and some documents.

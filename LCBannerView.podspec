@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCBannerView"
-  s.version      = "1.2.5"
+  s.version      = "2.0.0"
   s.summary      = "A very popular and highly customized banner view! Infinite loop! Support: http://LeoDev.me"
   s.homepage     = "https://github.com/iTofu/LCBannerView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files = "LCBannerView/*"
   s.requires_arc = true
 
-  s.dependency "SDWebImage"
+  s.dependency "SDWebImage", '~>3.8'
 
 end
