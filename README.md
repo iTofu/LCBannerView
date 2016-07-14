@@ -67,7 +67,7 @@ Just drag the LCBannerView folder into your project.
       LCBannerView *bannerView = [LCBannerView bannerViewWithFrame:CGRectMake(0, 300.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
                                                           delegate:self
                                                          imageURLs:URLs
-                                                  placeholderImage:nil
+                                              placeholderImageName:nil
                                                       timeInterval:2.0f
                                      currentPageIndicatorTintColor:[UIColor redColor]
                                             pageIndicatorTintColor:[UIColor whiteColor]];
@@ -133,7 +133,7 @@ Just drag the LCBannerView folder into your project.
 
 ### V 2.0.0 (⚠️ Important)
 
-* Fix [Issue 5](https://github.com/iTofu/LCBannerView/issues/5).
+* Fix [Issue 5](https://github.com/iTofu/LCBannerView/issues/5), thx [MVakas](https://github.com/MVakas)!
 
 * Modify some of the properties' name and methods' name:
 
@@ -143,8 +143,13 @@ Just drag the LCBannerView folder into your project.
   ->
   @property (nonatomic, assign) CGFloat timeInterval;
 
+  @property (nonatomic, copy  ) NSString  *placeholderImage;
+  ->
+  @property (nonatomic, copy  ) NSString  *placeholderImageName;
+
   // All methods' name.
   timerInterval -> timeInterval
+  placeholderImage -> placeholderImageName
   ```
 
 ### V 1.2.5
