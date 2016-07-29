@@ -95,9 +95,9 @@ Just drag the LCBannerView folder into your project.
 
 * **Advise** for run demo:
   
-  You should comment out the Block code or Delegate code in demo code, it will help you read code more clearly.
+  You should comment out one of the Block code or Delegate code in demo code, it will help you read code more clearly.
 
-  See more below.
+  See below two points for more information.
 
 * Block: (`@optional`)
 
@@ -178,7 +178,9 @@ Just drag the LCBannerView folder into your project.
 
 ### V 2.1.0
 
-* Implementation requirement: [Issue 6](https://github.com/iTofu/LCBannerView/issues/6) by [skyboy1342](https://github.com/skyboy1342). Now you could get the clicked image's index and the index scroll to, with **Block** or **Delegate**, see [Usage](https://github.com/iTofu/LCBannerView#usage).
+* Implementation requirement: [Issue 6](https://github.com/iTofu/LCBannerView/issues/6) by [skyboy1342](https://github.com/skyboy1342).
+  
+  Now you could get the clicked image's index and the index scroll to, with **Block** or **Delegate**, see [Usage](https://github.com/iTofu/LCBannerView#usage).
 
 ### V 2.0.0 (⚠️ Important)
 
