@@ -39,15 +39,15 @@
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView.pageDistance = 20.0f;
         
-//        bannerView.didClickedImageIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
-//            
-//            NSLog(@"Block: Clicked image in %p at index: %d", bannerView, (int)index);
-//        };
-//        
-//        bannerView.didScrollToIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
-//            
-//            NSLog(@"Block: Scrolled in %p to index: %d", bannerView, (int)index);
-//        };
+        bannerView.didClickedImageIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+            
+            NSLog(@"Block: Clicked image in %p at index: %d", bannerView, (int)index);
+        };
+        
+        bannerView.didScrollToIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+            
+            NSLog(@"Block: Scrolled in %p to index: %d", bannerView, (int)index);
+        };
         
 //        bannerView.notScrolling = YES;
         self.bannerView1 = bannerView;
@@ -107,14 +107,14 @@
     [self.view addSubview:label];
 }
 
-- (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
-    
-    NSLog(@"Delegate: Clicked image in %p at index: %d", bannerView, (int)index);
-}
-
-- (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index {
-    
-    NSLog(@"Delegate: Scrolled in %p to index: %d", bannerView, (int)index);
-}
+//- (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
+//    
+//    NSLog(@"Delegate: Clicked image in %p at index: %d", bannerView, (int)index);
+//}
+//
+//- (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index {
+//    
+//    NSLog(@"Delegate: Scrolled in %p to index: %d", bannerView, (int)index);
+//}
 
 @end
