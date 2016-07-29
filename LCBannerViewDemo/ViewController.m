@@ -31,13 +31,24 @@
     [scrollView addSubview:({
         
         LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
-                                                              delegate:self
+                                                              delegate:nil
                                                              imageName:@"banner"
                                                                  count:2
                                                           timeInterval:3.0f
                                          currentPageIndicatorTintColor:[UIColor orangeColor]
                                                 pageIndicatorTintColor:[UIColor whiteColor]];
         bannerView.pageDistance = 20.0f;
+        
+//        bannerView.didClickedImageIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+//            
+//            NSLog(@"Block: Clicked image in %p at index: %d", bannerView, (int)index);
+//        };
+//        
+//        bannerView.didScrollToIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+//            
+//            NSLog(@"Block: Scrolled in %p to index: %d", bannerView, (int)index);
+//        };
+        
 //        bannerView.notScrolling = YES;
         self.bannerView1 = bannerView;
     })];
@@ -98,7 +109,12 @@
 
 - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
     
-    NSLog(@"You clicked image in %p at index: %ld", bannerView, (long)index);
+    NSLog(@"Delegate: Clicked image in %p at index: %d", bannerView, (int)index);
+}
+
+- (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index {
+    
+    NSLog(@"Delegate: Scrolled in %p to index: %d", bannerView, (int)index);
 }
 
 @end

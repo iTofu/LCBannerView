@@ -93,24 +93,69 @@ Just drag the LCBannerView folder into your project.
   })];
   ````
 
-* Delegate:（`@optional`）
+* **Advise** for run demo:
+  
+  You should comment out the Block code or Delegate code in demo code, it will help you read code more clearly.
+
+  See more below.
+
+* Block: (`@optional`)
+
+  ````objc
+  @property (nonatomic, copy) LCBannerViewDidClickedImageIndexBlock didClickedImageIndexBlock;
+
+  @property (nonatomic, copy) LCBannerViewDidScrollToIndexBlock didScrollToIndexBlock;
+  ````
+
+  For example:
+
+  ````objc
+  bannerView.didClickedImageIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+      
+      NSLog(@"Block: Clicked image in %p at index: %d", bannerView, (int)index);
+  };
+  
+  bannerView.didScrollToIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
+      
+      NSLog(@"Block: Scrolled in %p to index: %d", bannerView, (int)index);
+  };
+
+  // Logs
+  2016-07-29 15:41:00.344 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 1
+  2016-07-29 15:41:03.343 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 2
+  2016-07-29 15:41:05.132 LCBannerViewDemo[3251:295032] Block: Clicked image in 0x7ff473538ec0 at index: 2
+  2016-07-29 15:41:06.344 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 0
+  2016-07-29 15:41:09.344 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 1
+  2016-07-29 15:41:12.342 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 2
+  ````
+
+* Delegate: (`@optional`)
 
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
+
+  - (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index;
   ````
 
   For example:
 
   ````objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
+      
+      NSLog(@"Delegate: Clicked image in %p at index: %d", bannerView, (int)index);
+  }
 
-        NSLog(@"You clicked image in %@ at index: %ld", bannerView, (long)index);
+  - (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index {
+      
+      NSLog(@"Delegate: Scrolled in %p to index: %d", bannerView, (int)index);
   }
 
   // Logs
-  2015-11-30 17:36:20.611 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b751ff0 at index: 1
-  2015-11-30 17:36:21.292 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b433190 at index: 1
-  2015-11-30 17:36:21.801 LCBannerViewDemo[6075:456257] You clicked image in 0x7fc98b751ff0 at index: 2
+  2016-07-29 15:41:45.296 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 1
+  2016-07-29 15:41:47.300 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 0
+  2016-07-29 15:41:48.429 LCBannerViewDemo[3293:296197] Delegate: Clicked image in 0x7f915b7349b0 at index: 0
+  2016-07-29 15:41:49.308 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 1
+  2016-07-29 15:41:51.297 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 0
   ````
 
 * Custom parameters:
@@ -130,6 +175,10 @@ Just drag the LCBannerView folder into your project.
 
 
 ## Release
+
+### V 2.1.0
+
+* Implementation requirement: [Issue 6](https://github.com/iTofu/LCBannerView/issues/6) by [skyboy1342](https://github.com/skyboy1342). Now you could get the clicked image's index and the index scroll to, with **Block** or **Delegate**, see [Usage](https://github.com/iTofu/LCBannerView#usage).
 
 ### V 2.0.0 (⚠️ Important)
 

@@ -119,6 +119,8 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
 
         self.pageControl = pageControl;
     })];
+    
+//    [self handleDidScroll];
 }
 
 - (void)addSubviewToScrollView:(UIScrollView *)scrollView {
@@ -183,8 +185,11 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
 - (void)imageViewTaped:(UITapGestureRecognizer *)tap {
 
     if ([self.delegate respondsToSelector:@selector(bannerView:didClickedImageIndex:)]) {
-
         [self.delegate bannerView:self didClickedImageIndex:tap.view.tag - 1];
+    }
+    
+    if (self.didClickedImageIndexBlock) {
+        self.didClickedImageIndexBlock(self, tap.view.tag - 1);
     }
 }
 
@@ -311,6 +316,17 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
     }
 }
 
+- (void)handleDidScroll {
+    
+    if ([self.delegate respondsToSelector:@selector(bannerView:didScrollToIndex:)]) {
+        [self.delegate bannerView:self didScrollToIndex:self.pageControl.currentPage];
+    }
+    
+    if (self.didScrollToIndexBlock) {
+        self.didScrollToIndexBlock(self, self.pageControl.currentPage);
+    }
+}
+
 #pragma mark - Timer
 
 - (void)addTimer {
@@ -385,6 +401,8 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
 
         self.pageControl.currentPage = currentPage - 1;
     }
+    
+    [self handleDidScroll];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {

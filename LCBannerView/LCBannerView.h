@@ -6,7 +6,7 @@
 //
 //  GitHub: http://github.com/iTofu
 //  Mail:   mailto:devtip@163.com
-//  V 2.0.0
+//  V 2.1.0
 
 #import <UIKit/UIKit.h>
 
@@ -14,17 +14,30 @@
 @class LCBannerView;
 
 
+typedef void(^LCBannerViewDidClickedImageIndexBlock)(LCBannerView *bannerView, NSInteger index);
+
+typedef void(^LCBannerViewDidScrollToIndexBlock)(LCBannerView *bannerView, NSInteger index);
+
+
 @protocol LCBannerViewDelegate <NSObject>
 
 @optional
 
 /**
- *  LCBannerView delegate method.
+ *  Did clicked image at an index.
  *
  *  @param bannerView LCBannerView
  *  @param index      clicked index
  */
 - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
+
+/**
+ *  Did scroll to an index.
+ *
+ *  @param bannerView LCBannerView
+ *  @param index      scroll to index
+ */
+- (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index;
 
 @end
 
@@ -69,6 +82,16 @@
  *  Placeholder image name.
  */
 @property (nonatomic, copy  ) NSString  *placeholderImageName;
+
+/**
+ *  Did clicked image at index block.
+ */
+@property (nonatomic, copy) LCBannerViewDidClickedImageIndexBlock didClickedImageIndexBlock;
+
+/**
+ *  Did scroll to index block.
+ */
+@property (nonatomic, copy) LCBannerViewDidScrollToIndexBlock didScrollToIndexBlock;
 
 
 #pragma mark - Class methods
