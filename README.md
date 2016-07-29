@@ -182,6 +182,8 @@ Just drag the LCBannerView folder into your project.
   
   Now you could get the clicked image's index and the index scroll to, with **Block** or **Delegate**, see [Usage](https://github.com/iTofu/LCBannerView#usage).
 
+* **Calculation**: `didScrollToIndex` method won't be called to index 0 when you add bannerView to superView, because it hadn't scroll at all, and in fact you know index is 0 now because you do this.
+
 ### V 2.0.0 (⚠️ Important)
 
 * Fix [Issue 5](https://github.com/iTofu/LCBannerView/issues/5), thx [MVakas](https://github.com/MVakas)!
