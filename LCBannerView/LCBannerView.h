@@ -6,16 +6,27 @@
 //
 //  GitHub: http://github.com/iTofu
 //  Mail:   mailto:devtip@163.com
-//  V 2.1.0
+//  V 2.1.1
 
 #import <UIKit/UIKit.h>
 
 
 @class LCBannerView;
 
-
+/**
+ *  Did clicked image at an index.
+ *
+ *  @param bannerView LCBannerView
+ *  @param index      clicked index
+ */
 typedef void(^LCBannerViewDidClickedImageIndexBlock)(LCBannerView *bannerView, NSInteger index);
 
+/**
+ *  Did scroll to an index.
+ *
+ *  @param bannerView LCBannerView
+ *  @param index      scrolled to index
+ */
 typedef void(^LCBannerViewDidScrollToIndexBlock)(LCBannerView *bannerView, NSInteger index);
 
 
@@ -35,7 +46,7 @@ typedef void(^LCBannerViewDidScrollToIndexBlock)(LCBannerView *bannerView, NSInt
  *  Did scroll to an index.
  *
  *  @param bannerView LCBannerView
- *  @param index      scroll to index
+ *  @param index      scrolled to index
  */
 - (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index;
 
@@ -54,9 +65,14 @@ typedef void(^LCBannerViewDidScrollToIndexBlock)(LCBannerView *bannerView, NSInt
 @property (nonatomic, assign) CGFloat   pageDistance;
 
 /**
- *  Not allow scrolling. Default `No`, allow scrolling.
+ *  Not allow scrolling. Default is `No`, allow scrolling.
  */
 @property (nonatomic, assign) BOOL      notScrolling;
+
+/**
+ *  Hide or show pageControl. Default is `NO`, show pageControl.
+ */
+@property (nonatomic, assign) BOOL      hidePageControl;
 
 /**
  *  Image name.

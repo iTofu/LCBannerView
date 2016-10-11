@@ -216,6 +216,12 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
     }
 }
 
+- (void)setHidePageControl:(BOOL)hidePageControl {
+    _hidePageControl = hidePageControl;
+    
+    self.pageControl.hidden = hidePageControl;
+}
+
 - (void)setImageName:(NSString *)imageName {
     _imageName = [imageName copy];
     

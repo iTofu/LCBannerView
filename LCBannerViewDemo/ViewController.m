@@ -76,6 +76,7 @@
                                                         timeInterval:2.0f
                                        currentPageIndicatorTintColor:[UIColor redColor]
                                               pageIndicatorTintColor:[UIColor whiteColor]];
+        bannerView.hidePageControl = YES;
         self.bannerView2 = bannerView;
     })];
     
@@ -101,9 +102,9 @@
     label.text = @"⚠️ Images changed, local images count from 2 to 3, internet image count from 3 to 2, image 3 named `banner_03` and `<201509091054250274.jpg>`.";
     label.textColor = [UIColor redColor];
     label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont boldSystemFontOfSize:17.0f];
+    label.font = [UIFont boldSystemFontOfSize:16.0f];
     label.numberOfLines = 4;
-    label.frame = CGRectMake(10.0f, [UIScreen mainScreen].bounds.size.height - 50.0f, [UIScreen mainScreen].bounds.size.width - 10.0f * 2, 50.0f);
+    label.frame = CGRectMake(10.0f, [UIScreen mainScreen].bounds.size.height - 80.0f, [UIScreen mainScreen].bounds.size.width - 10.0f * 2, 80.0f);
     [self.view addSubview:label];
 }
 
