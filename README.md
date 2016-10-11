@@ -168,7 +168,16 @@ Just drag the LCBannerView folder into your project.
 
 
 
-## Release
+## ChangeLog
+
+### V 2.1.1
+
+* Hide pageControl support:
+
+  ```objc
+  // Hide or show pageControl. Default is `NO`, show pageControl.
+  @property (nonatomic, assign) BOOL      hidePageControl;
+  ```
 
 ### V 2.1.0
 
