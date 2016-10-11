@@ -10,11 +10,11 @@
 
 ![LCBannerView](https://raw.githubusercontent.com/iTofu/LCBannerView/master/LCBannerViewDemo.gif)
 
-````
+```
 In me the tiger sniffs the rose.
 
 心有猛虎，细嗅蔷薇。
-````
+```
 
 Welcome to my blog: <http://LeoDev.me> ✨
 
@@ -38,9 +38,9 @@ If you feel good, please give me a star, thank you very much! ⭐️
 
 LCBannerView is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
-````ruby
+```ruby
 pod "LCBannerView"  # Podfile
-````
+```
 
 
 
@@ -54,13 +54,13 @@ Just drag the LCBannerView folder into your project.
 
 * Use by including the following import:
 
-  ````objc
+  ```objc
   #import "LCBannerView.h"
-  ````
+  ```
 
 * Demo code:
 
-  ````objc
+  ```objc
   // 1. From internet
   [scrollView addSubview:({
 
@@ -77,8 +77,7 @@ Just drag the LCBannerView folder into your project.
 
   // 2. From local
   /*  
-   *  If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`...
-   *  Than, you just give me a image named: `banner`. 😜
+   *  If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`... Than, you just give me a image named: `banner`. 😜
    */
   [scrollView addSubview:({
 
@@ -91,7 +90,7 @@ Just drag the LCBannerView folder into your project.
                                               pageIndicatorTintColor:[UIColor whiteColor]];
       bannerView;
   })];
-  ````
+  ```
 
 * **Advise** for run demo:
   
@@ -101,15 +100,15 @@ Just drag the LCBannerView folder into your project.
 
 * Block: (`@optional`)
 
-  ````objc
+  ```objc
   @property (nonatomic, copy) LCBannerViewDidClickedImageIndexBlock didClickedImageIndexBlock;
 
   @property (nonatomic, copy) LCBannerViewDidScrollToIndexBlock didScrollToIndexBlock;
-  ````
+  ```
 
   For example:
 
-  ````objc
+  ```objc
   bannerView.didClickedImageIndexBlock = ^(LCBannerView *bannerView, NSInteger index) {
       
       NSLog(@"Block: Clicked image in %p at index: %d", bannerView, (int)index);
@@ -127,19 +126,19 @@ Just drag the LCBannerView folder into your project.
   2016-07-29 15:41:06.344 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 0
   2016-07-29 15:41:09.344 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 1
   2016-07-29 15:41:12.342 LCBannerViewDemo[3251:295032] Block: Scrolled in 0x7ff473538ec0 to index: 2
-  ````
+  ```
 
 * Delegate: (`@optional`)
 
-  ````objc
+  ```objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index;
 
   - (void)bannerView:(LCBannerView *)bannerView didScrollToIndex:(NSInteger)index;
-  ````
+  ```
 
   For example:
 
-  ````objc
+  ```objc
   - (void)bannerView:(LCBannerView *)bannerView didClickedImageIndex:(NSInteger)index {
       
       NSLog(@"Delegate: Clicked image in %p at index: %d", bannerView, (int)index);
@@ -156,11 +155,11 @@ Just drag the LCBannerView folder into your project.
   2016-07-29 15:41:48.429 LCBannerViewDemo[3293:296197] Delegate: Clicked image in 0x7f915b7349b0 at index: 0
   2016-07-29 15:41:49.308 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 1
   2016-07-29 15:41:51.297 LCBannerViewDemo[3293:296197] Delegate: Scrolled in 0x7f915b7349b0 to index: 0
-  ````
+  ```
 
 * Custom parameters:
 
-  ````objc
+  ```objc
   /**
    *  Distance to bottom of pageControl. Default is `10.0f`.
    */
@@ -170,7 +169,7 @@ Just drag the LCBannerView folder into your project.
    *  Not allow scrolling. Default `No`, allow scrolling.
    */
   @property (nonatomic, assign) BOOL      notScrolling;
-  ````
+  ```
 
 
 
@@ -219,7 +218,7 @@ Just drag the LCBannerView folder into your project.
 
 * You could custom the images should scrolling now, thx [ac1dpax](https://github.com/ac1dpax). For example:
 
-  ````objc
+  ```objc
   LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
                                                         delegate:self
                                                        imageName:@"banner"
@@ -230,16 +229,16 @@ Just drag the LCBannerView folder into your project.
   bannerView.pageDistance = 20.0f;
   bannerView.notScrolling = YES; // THIS LINE ⬅️
   bannerView;
-  ````
+  ```
 
 ### V 1.1.0
 
 * You could custom page control bottom distance now. For example:
 
-  ````objc
+  ```objc
   // ...
   bannerView.pageDistance = 20.0f;
-  ````
+  ```
 
 
 ### V 1.0.0

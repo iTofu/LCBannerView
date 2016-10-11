@@ -10,15 +10,15 @@
 
 ![LCBannerView](https://raw.githubusercontent.com/iTofu/LCBannerView/master/LCBannerViewDemo.gif)
 
-````
+```
 In me the tiger sniffs the rose.
 
 心有猛虎，细嗅蔷薇。
-````
+```
 
-````
+```
 国人都很聪明，害要啥 README！
-````
+```
 
 * Mail: devtip@163.com
 * Blog: http://LeoDev.me

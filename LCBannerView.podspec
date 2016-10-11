@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCBannerView"
-  s.version      = "2.1.0"
+  s.version      = "2.1.1"
   s.summary      = "A very popular and highly customized banner view! Infinite loop! Support: http://LeoDev.me"
   s.homepage     = "https://github.com/iTofu/LCBannerView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
