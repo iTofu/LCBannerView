@@ -76,9 +76,8 @@ Just drag the LCBannerView folder into your project.
   })];
 
   // 2. From local
-  /*  
-   *  If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`... Than, you just give me a image named: `banner`. 😜
-   */
+  // If you using images from local, you should let images named: `banner_01@2x.png`, `banner_02@2x.png`...
+  // Than, you just give me a image named: `banner`. 😜
   [scrollView addSubview:({
 
       LCBannerView *bannerView = [[LCBannerView alloc] initWithFrame:CGRectMake(0, 20.0f, [UIScreen mainScreen].bounds.size.width, 200.0f)
@@ -160,14 +159,10 @@ Just drag the LCBannerView folder into your project.
 * Custom parameters:
 
   ```objc
-  /**
-   *  Distance to bottom of pageControl. Default is `10.0f`.
-   */
+  // Distance to bottom of pageControl. Default is `10.0f`.
   @property (nonatomic, assign) CGFloat   pageDistance;
 
-  /**
-   *  Not allow scrolling. Default `No`, allow scrolling.
-   */
+  // Not allow scrolling. Default `No`, allow scrolling.
   @property (nonatomic, assign) BOOL      notScrolling;
   ```
 
@@ -189,7 +184,7 @@ Just drag the LCBannerView folder into your project.
 
 * Modify some of the properties' name and methods' name:
 
-  ```
+  ```objc
   // Properties' name.
   @property (nonatomic, assign) CGFloat timerInterval;
   ->
