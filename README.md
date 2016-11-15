@@ -36,15 +36,15 @@ If you feel good, please give me a star, thank you very much! ⭐️
 
 ## Installation
 
+### CocoaPods
+
 LCBannerView is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
 ```ruby
 pod "LCBannerView"  # Podfile
 ```
 
-
-
-## Non-CocoaPods Installation
+### Non-CocoaPods Installation
 
 Just drag the LCBannerView folder into your project.
 
