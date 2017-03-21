@@ -259,11 +259,11 @@ Just drag the LCBannerView folder into your project.
 
 ## Support
 
-* If you have any question, just [commit a issue](https://github.com/iTofu/LCBannerView/issues/new)! Thx!
+* If you have any question, just [commit a issue](https://github.com/iTofu/LCBannerView/issues/new) :)
 
-* Mail: devtip@163.com
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
 
-* Blog: http://LeoDev.me
+* Blog: https://LeoDev.me
 
 * Donations:
 
@@ -276,7 +276,6 @@ Just drag the LCBannerView folder into your project.
     <img src="https://cdnqiniu.leodev.me/donate.png?v=1" alt="Donate with Alipay or Wechat Pay" title="Donate with Alipay or Wechat Pay" width="320"/>
     
   Please note: donation does not imply any type of service contract.
-
 
 
 ## License
