@@ -8,7 +8,7 @@
 
 🔥 A very popular and highly customized banner view! Infinite loop!
 
-![LCBannerView](https://raw.githubusercontent.com/iTofu/LCBannerView/master/LCBannerViewDemo.gif)
+<img src="https://raw.githubusercontent.com/iTofu/LCBannerView/master/LCBannerViewDemo.gif" alt="LCBannerView" title="LCBannerView" width="640"/>
 
 ```
 In me the tiger sniffs the rose.
@@ -176,7 +176,7 @@ Just drag the LCBannerView folder into your project.
 
   ```objc
   // Hide or show pageControl. Default is `NO`, show pageControl.
-  @property (nonatomic, assign) BOOL      hidePageControl;
+  @property (nonatomic, assign) BOOL hidePageControl;
   ```
 
 ### V 2.1.0
@@ -265,9 +265,17 @@ Just drag the LCBannerView folder into your project.
 
 * Blog: http://LeoDev.me
 
-* Friendly sponsorship with Alipay or Wechat Pay, thank you!
+* Donations:
 
-  ![Leo](http://note.leodev.me/alipay.png)
+  * PayPal:
+  
+    [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=leodaxia@gmail.com&item_name=Support%20Leo)
+  
+  * Alipay or Wechat Pay:
+  
+    <img src="https://cdnqiniu.leodev.me/donate.png?v=1" alt="Donate with Alipay or Wechat Pay" title="Donate with Alipay or Wechat Pay" width="320"/>
+    
+  Please note: donation does not imply any type of service contract.
 
 
 
