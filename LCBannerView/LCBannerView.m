@@ -275,6 +275,7 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
         
         self.pageControl.numberOfPages = self.count;
         
+        self.scrollView.contentSize = CGSizeMake((self.count + 2) * self.frame.size.width, 0);
     } else {
         
         for (int i = 0; i < self.count + 2; i++) {
