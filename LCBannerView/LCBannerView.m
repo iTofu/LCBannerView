@@ -166,9 +166,10 @@ static CGFloat LCPageDistance = 10.0f;  // distance to bottom of pageControl
             imageView.image = image;
             
         } else {    // from internet
-            
-            [imageView sd_setImageWithURL:[NSURL URLWithString:self.imageURLs[tag - 1]]
-                         placeholderImage:self.placeholderImageName.length > 0 ? [UIImage imageNamed:self.placeholderImageName] : nil];
+            if (self.imageURLs.count > 0) {
+                [imageView sd_setImageWithURL:[NSURL URLWithString:self.imageURLs[tag - 1]]
+                             placeholderImage:self.placeholderImageName.length > 0 ? [UIImage imageNamed:self.placeholderImageName] : nil];
+            }
         }
         
         imageView.clipsToBounds          = YES;
